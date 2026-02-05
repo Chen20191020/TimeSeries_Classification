@@ -12,4 +12,4 @@ C. Qian, X. Ding, and L. Li. Structural Classification of Locally Stationary Tim
 # System Requirements
 
 # How to use 
-To run the proposed method, first run file Fast_Proposed_method.R 
+To run the proposed method, first run file Fast_Proposed_method.R. In order to run FLogistic method, first install the package "FREG"
