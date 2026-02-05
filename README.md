@@ -7,7 +7,8 @@ This repository contains demonstration code for the TimeSeries_Classification pr
 Our proposed method is described in the paper:
 C. Qian, X. Ding, and L. Li. Structural Classification of Locally Stationary Time Series Based on Second-order Characteristics, arXiv: 2507.04237. https://arxiv.org/abs/2507.04237
 
-
 # Content
 
 # System Requirements
+
+# How to use 
