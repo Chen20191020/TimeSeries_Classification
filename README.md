@@ -14,5 +14,5 @@ C. Qian, X. Ding, and L. Li. Structural Classification of Locally Stationary Tim
 # How to use 
 To run the proposed method, first run file Fast_Proposed_method.R. In order to run FLogistic method, first install the package "FREG" using FREG file. For Table 1, first run the file Simulation_setup_eps1.R. For Table S.1, first run the file Simulation_setup_eps2.R. For Table S.2, first run the file Simulation_setup_eps3.R. 
 
-For Table S.3. The Simulation Data used for methods in Python can be download from https://drive.google.com/drive/folders/1J1zWdC41zoJ_QWxubKw-0LUxeZavRYmu?usp=sharing, the path of file should manually input in. 
+For Table S.3. The Simulation Data used for methods in Python can be download from https://drive.google.com/drive/folders/1J1zWdC41zoJ_QWxubKw-0LUxeZavRYmu?usp=sharing, the path of file should manually input in. For the method in R, first run file SimulationLSW_setup.R. 
 
