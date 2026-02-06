@@ -30,6 +30,10 @@ Our proposed method, along with DWT, LSW, and FLogistic, is implemented in R. Th
 
 **Folder Table S.6** contains the code for classification accuracy under change point setup without modification. It includes `Setup_1.R` and `Setup_2.R`.
 
+**Folder Table S.7** contains the code for classification accuracy under change point setup after modification. It includes `Change_detect_Setup_1.R` and `Change_detect_Setup_2.R`.
+
+**Folder Table S.8** contains the code for classification accuracy under selected models with various features. It includes `selected_model_setup.R` for simulation setup and `All_aggfeature.R`, `Half_aggfeature.R`, `L2Dis_aggfeature.R`, `Min_aggfeature.R`, `Minvary_aggfeature.R`, `Proposed_aggfeature.R` for aggregate feature Proposed, All, FirstHalf, L2Dis, Min, Minvary respectively. 
+
 # System Requirements
 
 The method requires only a standard computer with enough RAM to support the operations defined by a user. For optimal performance, we recommend a computer with the following specs:
