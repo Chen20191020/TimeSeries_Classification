@@ -19,6 +19,23 @@ Our proposed method, along with DWT, LSW, and FLogistic, is implemented in R. Th
 
 # System Requirements
 
+The method requires only a standard computer with enough RAM to support the operations defined by a user. For optimal performance, we recommend a computer with the following specs:
+
+* **RAM:** 16+ GB
+* **CPU:** 4+ cores, 3.3+ GHz/core
+
+### Software Versions
+The implementation is provided in both R and Python and has been tested under the following versions:
+* **R:** Version 4.1.1 or higher
+* **Python:** Version 3.8 or higher
+
+## 📦 Installation & Usage
+
+### 1. R Environment
+Ensure you have the necessary R packages installed. You can install dependencies using:
+```r
+install.packages(c("forecast", "stats", "base")) # Add your specific packages here
+
 # How to use 
 To run the proposed method, first run file Fast_Proposed_method.R. In order to run FLogistic method, first install the package "FREG" using FREG file. For Table 1, first run the file Simulation_setup_eps1.R. For Table S.1, first run the file Simulation_setup_eps2.R. For Table S.2, first run the file Simulation_setup_eps3.R. 
 
