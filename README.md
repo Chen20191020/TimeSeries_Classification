@@ -32,9 +32,17 @@ The implementation is provided in both R and Python and has been tested under th
 ## 📦 Installation & Usage
 
 ### 1. R Environment
-Ensure you have the necessary R packages installed. You can install dependencies using:
+Ensure you have the necessary R packages installed.
 ```r
-install.packages(c("forecast", "stats", "base")) # Add your specific packages here
+install.packages(c("forecast", "stats", "base"))
+```
+
+### 1. Python Environment
+Ensure you have the necessary R packages installed.
+```python
+install.packages(c("forecast", "stats", "base"))
+```
+
 
 # How to use 
 To run the proposed method, first run file Fast_Proposed_method.R. In order to run FLogistic method, first install the package "FREG" using FREG file. For Table 1, first run the file Simulation_setup_eps1.R. For Table S.1, first run the file Simulation_setup_eps2.R. For Table S.2, first run the file Simulation_setup_eps3.R. 
