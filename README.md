@@ -32,13 +32,13 @@ The implementation is provided in both R and Python and has been tested under th
 ## 📦 Installation & Usage
 
 ### 1. R Environment
-Ensure you have the necessary R packages installed.
+Ensure you have the necessary R packages installed. If `FREG` cannot be installed directly, please use the provided `FREG` file for manual installation.
 ```r
-install.packages(c("wavelets", "MASS", "sparsediscrim", "fda", "refund", "wavethresh"))
+install.packages(c("wavelets", "MASS", "sparsediscrim", "fda", "refund", "wavethresh", "FREG"))
 ```
 
 ### 1. Python Environment
-Ensure you have the necessary R packages installed.
+Ensure you have the necessary Python packages installed.
 ```python
 
 ```
