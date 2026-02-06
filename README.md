@@ -40,6 +40,39 @@ install.packages(c("wavelets", "MASS", "sparsediscrim", "fda", "refund", "waveth
 ### 1. Python Environment
 Ensure you have the necessary Python packages installed.
 ```python
+from sklearn.metrics import accuracy_score
+from aeon.classification.deep_learning import TimeCNNClassifier
+import pandas as pd
+import numpy as np
+from time import time
+import time
+from aeon.classification.convolution_based import (
+    Arsenal,
+    HydraClassifier,
+    MiniRocketClassifier,
+    MultiRocketClassifier,
+    MultiRocketHydraClassifier,
+    RocketClassifier,
+)
+from keras.models import Sequential
+from keras.layers import Dense, LSTM, BatchNormalization
+from keras.optimizers import Adam
+from keras.callbacks import ReduceLROnPlateau, EarlyStopping
+from keras.regularizers import l2
+from sklearn.ensemble import RandomForestClassifier
+from aeon.classification.shapelet_based import ShapeletTransformClassifier
+import rpy2.robjects as robjects
+from sklearn import metrics
+
+from aeon.classification.interval_based import (
+    RSTSF,
+    CanonicalIntervalForestClassifier,
+    DrCIFClassifier,
+    QUANTClassifier,
+    RandomIntervalSpectralEnsembleClassifier,
+    SupervisedTimeSeriesForest,
+    TimeSeriesForestClassifier,
+)
 
 ```
 
