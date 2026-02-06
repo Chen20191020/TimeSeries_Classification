@@ -13,10 +13,18 @@ To distinguish the LSW method from LSW simulation models, we use the prefix `LSW
 
 Our proposed method, along with DWT, LSW, and FLogistic, is implemented in R. The remaining methods—Arsenal, MultiRocket, Rocket, STSForest, Shapelet, TimeCNN, and TimeRNN—are implemented in Python.
 
-**Folder Table1**, **Folder Table S.1**, 
+**Folder Table 1**, **Folder Table S.1**, **Folder Table S.2**, **Folder Table S.3**, **Folder Table S.4**, include two subfolders, `Balanced` and `Unbalanced`. The `Balanced` folder contains code for all methods under the setting $N_1 = 100, N_2 = 100$, while the `Unbalanced` folder contains code for all methods under the setting $N_1 = 50, N_2 = 100$.
 
-**Folder Table1** contains the code for classification accuracy under noise distribution (i). It includes `Simulation_setup_eps1.R` and two subfolders, `Balanced` and `Unbalanced`. The `Balanced` folder contains code for all methods under the setting $N_1 = 100, N_2 = 100$, while the `Unbalanced` folder contains code for all methods under the setting $N_1 = 50, N_2 = 100$.
 
+**Folder Table 1** contains the code for classification accuracy under noise distribution (i). It includes `Simulation_setup_eps1.R` and subfolders, `Balanced` and `Unbalanced`. 
+
+**Folder Table S.1** contains the code for classification accuracy under noise distribution (ii). It includes `Simulation_setup_eps2.R` and subfolders, `Balanced` and `Unbalanced`. 
+
+**Folder Table S.2** contains the code for classification accuracy under noise distribution (iii). It includes `Simulation_setup_eps3.R` and subfolders, `Balanced` and `Unbalanced`. 
+
+**Folder Table S.3** contains the code for classification accuracy under LSW processes. It includes `SimulationLSW_setup.R` and subfolders, `Balanced` and `Unbalanced`. 
+
+**Folder Table S.4** contains the code for classification accuracy when differences lie in the mean. It includes `Simulation_setup_meandiff.R` and subfolders, `Balanced` and `Unbalanced`. 
 
 # System Requirements
 
