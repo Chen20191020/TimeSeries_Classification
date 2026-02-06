@@ -26,6 +26,10 @@ Our proposed method, along with DWT, LSW, and FLogistic, is implemented in R. Th
 
 **Folder Table S.4** contains the code for classification accuracy when differences lie in the mean. It includes `Simulation_setup_meandiff.R` and subfolders, `Balanced` and `Unbalanced`. 
 
+**Folder Table S.5** contains the code for classification accuracy with different training sample setups. It includes `Proposed_varyn1n2n3_demo.R`. 
+
+**Folder Table S.6** contains the code for classification accuracy under change point setup without modification. It includes `Setup_1.R` and `Setup_2.R`.
+
 # System Requirements
 
 The method requires only a standard computer with enough RAM to support the operations defined by a user. For optimal performance, we recommend a computer with the following specs:
