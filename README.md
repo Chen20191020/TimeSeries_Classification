@@ -48,10 +48,7 @@ from time import time
 import time
 from aeon.classification.convolution_based import (
     Arsenal,
-    HydraClassifier,
-    MiniRocketClassifier,
     MultiRocketClassifier,
-    MultiRocketHydraClassifier,
     RocketClassifier,
 )
 from keras.models import Sequential
@@ -65,13 +62,7 @@ import rpy2.robjects as robjects
 from sklearn import metrics
 
 from aeon.classification.interval_based import (
-    RSTSF,
-    CanonicalIntervalForestClassifier,
-    DrCIFClassifier,
-    QUANTClassifier,
-    RandomIntervalSpectralEnsembleClassifier,
     SupervisedTimeSeriesForest,
-    TimeSeriesForestClassifier,
 )
 
 ```
