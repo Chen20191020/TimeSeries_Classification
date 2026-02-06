@@ -13,7 +13,7 @@ To distinguish between the LSW method and LSW simulation models, we use the pref
 
 Our proposed method, along with DWT, LSW, and FLogistic, is implemented in R. The remaining methods—Arsenal, MultiRocket, Rocket, STSForest, Shapelet, TimeCNN, and TimeRNN—are implemented in Python.
 
-\textbf{Folder Table1} contains the code for classification accuracy under noise distribution (i). It includes \texttt{Simulation\_setup\_eps1.R} and two subfolders, \texttt{Balanced} and \texttt{Unbalanced}. The \texttt{Balanced} folder contains code for all methods under the setting $N_1 = 100, N_2 = 100$, while the \texttt{Unbalanced} folder contains code for all methods under the setting $N_1 = 50, N_2 = 100$.
+**Folder Table1** contains the code for classification accuracy under noise distribution (i). It includes `Simulation_setup_eps1.R` and two subfolders, `Balanced` and `Unbalanced`. The `Balanced` folder contains code for all methods under the setting $N_1 = 100, N_2 = 100$, while the `Unbalanced` folder contains code for all methods under the setting $N_1 = 50, N_2 = 100$.
 
 
 # System Requirements
