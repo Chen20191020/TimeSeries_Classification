@@ -7,11 +7,12 @@ C. Qian, X. Ding, and L. Li. Structural Classification of Locally Stationary Tim
 
 # Content
 
-Each folder is named after the corresponding table or figure in the paper. For example, the folder Table1 contains the code used to generate Table 1, and similarly for other tables and figures. Within each folder, code files are named after the methods used in the paper. For instance, Arsenal_demo.py corresponds to the Arsenal method. 
+Each folder is named after the corresponding table or figure in the paper. For example, the `Table1` folder contains the code used to generate Table 1, and the same convention applies to other tables and figures. Within each folder, code files are named according to the methods used in the paper. For instance, `Arsenal_demo.py` corresponds to the Arsenal method.
 
-To distinguish between the LSW method and LSW simulation models, we use the prefix LSWmethod throughout the repository to refer specifically to the LSW method implemented in the paper.
+To distinguish the LSW method from LSW simulation models, we use the prefix `LSWmethod` throughout the repository to refer specifically to the LSW method implemented in the paper.
 
 Our proposed method, along with DWT, LSW, and FLogistic, is implemented in R. The remaining methods—Arsenal, MultiRocket, Rocket, STSForest, Shapelet, TimeCNN, and TimeRNN—are implemented in Python.
+
 
 **Folder Table1** contains the code for classification accuracy under noise distribution (i). It includes `Simulation_setup_eps1.R` and two subfolders, `Balanced` and `Unbalanced`. The `Balanced` folder contains code for all methods under the setting $N_1 = 100, N_2 = 100$, while the `Unbalanced` folder contains code for all methods under the setting $N_1 = 50, N_2 = 100$.
 
