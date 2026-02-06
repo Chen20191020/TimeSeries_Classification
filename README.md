@@ -34,13 +34,13 @@ The implementation is provided in both R and Python and has been tested under th
 ### 1. R Environment
 Ensure you have the necessary R packages installed.
 ```r
-install.packages(c("forecast", "stats", "base"))
+install.packages(c("wavelets", "MASS", "sparsediscrim", "fda", "refund", "wavethresh"))
 ```
 
 ### 1. Python Environment
 Ensure you have the necessary R packages installed.
 ```python
-install.packages(c("forecast", "stats", "base"))
+
 ```
 
 
