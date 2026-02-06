@@ -16,4 +16,4 @@ To run the proposed method, first run file Fast_Proposed_method.R. In order to r
 
 For Table S.3 The Simulation Data used for methods in Python can be download from https://drive.google.com/drive/folders/1J1zWdC41zoJ_QWxubKw-0LUxeZavRYmu?usp=sharing, the path of file should manually input in. For the method in R, first run file SimulationLSW_setup.R. 
 
-For Table S.4 first run the file Simulation_setup_meandiff.R. 
+For Table S.4 first run the file Simulation_setup_meandiff.R.  For Table S.8 the Data can be download from https://drive.google.com/drive/folders/10wuTVadTLqrvo7aO8X79Zsm-uE5eGcX1?usp=sharing
