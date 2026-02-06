@@ -34,6 +34,9 @@ Our proposed method, along with DWT, LSW, and FLogistic, is implemented in R. Th
 
 **Folder Table S.8** contains the code for classification accuracy under selected models with various features. It includes `selected_model_setup.R` for simulation setup and `All_aggfeature.R`, `Half_aggfeature.R`, `L2Dis_aggfeature.R`, `Min_aggfeature.R`, `Minvary_aggfeature.R`, `Proposed_aggfeature.R` for aggregate feature Proposed, All, FirstHalf, L2Dis, Min, Minvary respectively. 
 
+**Folder Table S.9 & S.10** contains the code for computational time (in seconds) for different methods. It includes `Arsenal_comtime.py`, `DWT_comtime.R`, `FLogistic_comtime.R` , `LSWmethod_comtime.R`, `MultiRocket_comtime.py`, `Proposed_comtime.R`, `Rocket_comtime.py`, `STSForest_comtime.py`, `Shapelet_comtime.py`, `TimeCNN_comtime.py`,`TimeRNN_comtime.py`.
+
+
 # System Requirements
 
 The method requires only a standard computer with enough RAM to support the operations defined by a user. For optimal performance, we recommend a computer with the following specs:
