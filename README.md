@@ -18,9 +18,11 @@ Our proposed method, along with DWT, LSW, and FLogistic, is implemented in R. Th
 
 **Folder Table 1** contains the code for classification accuracy under noise distribution (i). It includes `Simulation_setup_eps1.R` and subfolders, `Balanced` and `Unbalanced`. 
 
-**Folder Figure 2** contains the code for the Boxplot of extracting features. It includes `Figure2_draw.R` to draw the plot, and `Arsenal_extract_feature.py`, `DWT_extract_feature.R`, `FLRG_extract_feature.R`, `LSWmethod_extract_feature.R`, `Multirocket_extract_feature.py`, `Proposed_extract_feature.R`, `Rocket_extract_feature.py`, `STSForest_extract_feature.py`, `Shapelet_extract_feature.py`, `TimeCNN_extract_feature.py`, `TimeRNN_extract_feature.py`. 
+**Folder Figure 2** contains the code for the Boxplot of extracting features. It includes `Figure2_draw.R` to draw the plot, and the code files for each method. 
 
-**Folder Figure 3** contains the code for Figure 3(a), Figure 3(b), and Figure 3(c). It includes 3 subfolders, `Figure 3(a)`, `Figure 3(b)` and `Figure 3(c)`. Each subfolder contains the files for each method and one file for drawing the plot.
+**Folder Figure 3** contains the code for Figure 3(a), Figure 3(b), and Figure 3(c). It includes 3 subfolders, `Figure 3(a)`, `Figure 3(b)` and `Figure 3(c)`. Each subfolder contains the code files for each method and one file for drawing the plot.
+
+**Folder Table 2** contains the code for classification accuracy for EEG data across all methods. It includes `DWT_realdata.R`, `FLogistic_realdata.R`, `LSWmethod_realdata.R`, `Proposed_realdata.R`, and `methods_inpy_realdata.py`. In addition, the code file `methods_inpy_realdata.py` contains the code for methods Arsenal, MultiRocket, Rocket, STSForest, Shapelet, TimeCNN, and TimeRNN. 
 
 **Folder Table S.1** contains the code for classification accuracy under noise distribution (ii). It includes `Simulation_setup_eps2.R` and subfolders, `Balanced` and `Unbalanced`. 
 
