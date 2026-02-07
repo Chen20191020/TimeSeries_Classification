@@ -38,7 +38,7 @@ Our proposed method, along with DWT, LSW, and FLogistic, is implemented in R. Th
 
 **Folder Table S.11** contains the code for classification accuracy under unit root and long memory models. It includes `model_ur_lm_setup.R` for simulation setup and All_aggfeature.R`, `Half_aggfeature.R`, `L2Dis_aggfeature.R`, `Min_aggfeature.R`, `Minvary_aggfeature.R`, `Proposed_aggfeature.R` for aggregate feature All, FirstHalf, L2Dis, Min, Minvary, and Proposed respectively. 
 
-**Folder S.1** contains the code for classification accuracy LSW and DWT when the time series length increases. It includes `FigureS.1_draw.R` to draw the plot, `DWT_n_vary.R` and `LSWmethod_n_vary.R` for simulation. 
+**Folder Figure S.1** contains the code for classification accuracy LSW and DWT when the time series length increases. It includes `FigureS.1_draw.R` to draw the plot, `DWT_n_vary.R` and `LSWmethod_n_vary.R` for simulation. 
 
 
 
