@@ -101,10 +101,53 @@ from aeon.classification.interval_based import (
 ```
 
 
-# How to use 
-To run the proposed method, first run file Fast_Proposed_method.R. In order to run FLogistic method, first install the package "FREG" using FREG file. For Table 1, first run the file Simulation_setup_eps1.R. For Table S.1, first run the file Simulation_setup_eps2.R. For Table S.2, first run the file Simulation_setup_eps3.R. 
+# Notes on How to Run the Code
 
-For Table S.3 The Simulation Data used for methods in Python can be download from https://drive.google.com/drive/folders/1J1zWdC41zoJ_QWxubKw-0LUxeZavRYmu?usp=sharing, the path of file should manually input in. For the method in R, first run file SimulationLSW_setup.R. 
+For all real-data experiments (EEG), noise terms have already been included. Please manually specify the data paths as needed when loading the data.
 
-For Table S.4 first run the file Simulation_setup_meandiff.R.  For Table S.8 the Data can be download from https://drive.google.com/drive/folders/10wuTVadTLqrvo7aO8X79Zsm-uE5eGcX1?usp=sharing
+To run the proposed method, first execute:
+
+- `Fast_Proposed_method.R`
+
+## Simulation Tables
+
+- **Table 1**:  
+  First run `Simulation_setup_eps1.R`.
+
+- **Table S.1**:  
+  First run `Simulation_setup_eps2.R`.
+
+- **Table S.2**:  
+  First run `Simulation_setup_eps3.R`.
+
+- **Table S.3**:  
+  For Python-based methods, the simulation data can be downloaded from:  
+  https://drive.google.com/drive/folders/1J1zWdC41zoJ_QWxubKw-0LUxeZavRYmu?usp=sharing  
+  Please manually specify the file paths.
+
+  For R-based methods, first run `SimulationLSW_setup.R`.
+
+- **Table S.4**:  
+  First run `Simulation_setup_meandiff.R`.
+
+- **Table S.8**:  
+  The data can be downloaded from:  
+  https://drive.google.com/drive/folders/10wuTVadTLqrvo7aO8X79Zsm-uE5eGcX1?usp=sharing  
+
+  For simulation, first run `selected_model_setup.R`.
+
+- **Table S.9 and Table S.10**:  
+  The data can be downloaded from:  
+  https://drive.google.com/drive/folders/1ditsD4G6S8q77yTPiAdolQcC5U8FyHHo?usp=sharing
+
+- **Table S.11**:  
+  First run `model_ur_lm_setup.R`.
+
+## Real Data Results
+
+- **Table 2 and Figure 4**:  
+  The data can be downloaded from:  
+  https://drive.google.com/drive/folders/10wuTVadTLqrvo7aO8X79Zsm-uE5eGcX1?usp=sharing  
+
+  Please manually specify the data paths after downloading.
 
