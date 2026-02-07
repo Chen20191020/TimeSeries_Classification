@@ -24,6 +24,8 @@ Our proposed method, along with DWT, LSW, and FLogistic, is implemented in R. Th
 
 **Folder Table 2** contains the code for classification accuracy for EEG data across all methods. It includes `DWT_realdata.R`, `FLogistic_realdata.R`, `LSWmethod_realdata.R`, `Proposed_realdata.R`, and `methods_inpy_realdata.py`. In addition, the code file `methods_inpy_realdata.py` contains the code for methods Arsenal, MultiRocket, Rocket, STSForest, Shapelet, TimeCNN, and TimeRNN. 
 
+**Folder Figure 4** contains the code for Figure 4(a) and Figure 4(b). It includes 2 subfolders, `Figure 4(a)` and `Figure 4(b)`. `Figure 4(a)` contains code file `Figure_4(a).R` and `Figure 4(b)` contains `Figure_4(b)_draw.R` to draw the plot and the rest code files are same as in **Folder Table 2**. However, we use the output majority voting results.
+
 **Folder Table S.1** contains the code for classification accuracy under noise distribution (ii). It includes `Simulation_setup_eps2.R` and subfolders, `Balanced` and `Unbalanced`. 
 
 **Folder Table S.2** contains the code for classification accuracy under noise distribution (iii). It includes `Simulation_setup_eps3.R` and subfolders, `Balanced` and `Unbalanced`. 
@@ -45,8 +47,6 @@ Our proposed method, along with DWT, LSW, and FLogistic, is implemented in R. Th
 **Folder Table S.11** contains the code for classification accuracy under unit root and long memory models. It includes `model_ur_lm_setup.R` for simulation setup and All_aggfeature.R`, `Half_aggfeature.R`, `L2Dis_aggfeature.R`, `Min_aggfeature.R`, `Minvary_aggfeature.R`, `Proposed_aggfeature.R` for aggregate feature All, FirstHalf, L2Dis, Min, Minvary, and Proposed respectively. 
 
 **Folder Figure S.1** contains the code for classification accuracy LSW and DWT when the time series length increases. It includes `FigureS.1_draw.R` to draw the plot, `DWT_n_vary.R` and `LSWmethod_n_vary.R` for simulation. 
-
-
 
 
 
