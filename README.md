@@ -133,13 +133,13 @@ To run the proposed method, first execute:
 - **Table S.8**:  
   The data can be downloaded from:  
   https://drive.google.com/drive/folders/10wuTVadTLqrvo7aO8X79Zsm-uE5eGcX1?usp=sharing  
-
+  Please manually specify the data paths.
   For simulation, first run `selected_model_setup.R`.
 
 - **Table S.9 and Table S.10**:  
   The data can be downloaded from:  
   https://drive.google.com/drive/folders/1ditsD4G6S8q77yTPiAdolQcC5U8FyHHo?usp=sharing
-
+  Please manually specify the data paths.
 - **Table S.11**:  
   First run `model_ur_lm_setup.R`.
 
