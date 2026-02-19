@@ -1,5 +1,7 @@
 
 
+# Model 16
+
 f = function(t, a, t1, t2){
   # We subtract t1 inside the sine function
   ifelse(t >= t1 & t <= t2, 0.5 * sin(2 * pi * t), a)
