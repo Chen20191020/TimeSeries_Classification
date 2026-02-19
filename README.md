@@ -34,11 +34,9 @@ Our proposed method, along with DWT, LSW, and FLogistic, is implemented in R. Th
 
 **Folder Table S.4** contains the code for classification accuracy when differences lie in the mean. It includes `Simulation_setup_meandiff.R` and subfolders, `Balanced` and `Unbalanced`. 
 
+**Folder Table S.5** contains the code for computing classification accuracy under the change-point setup, both without modification and after modification. It includes `Setup_1.R`, `Setup_2.R` for the results without modification, and `Change_detect_Setup_1.R` and `Change_detect_Setup_2.R` for the results after modification.
+
 **Folder Table S.7** contains the code for classification accuracy with different training sample setups. It includes `Proposed_varyn1n2n3_demo.R`. 
-
-**Folder Table S.6** contains the code for classification accuracy under change point setup without modification. It includes `Setup_1.R` and `Setup_2.R`.
-
-**Folder Table S.7** contains the code for classification accuracy under change point setup after modification. It includes `Change_detect_Setup_1.R` and `Change_detect_Setup_2.R`.
 
 **Folder Table S.8** contains the code for classification accuracy under selected models with various features. It includes `selected_model_setup.R` for simulation setup and `All_aggfeature.R`, `Half_aggfeature.R`, `L2Dis_aggfeature.R`, `Min_aggfeature.R`, `Minvary_aggfeature.R`, `Proposed_aggfeature.R` for aggregate feature All, FirstHalf, L2Dis, Min, Minvary, and Proposed respectively. 
 
