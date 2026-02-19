@@ -1,4 +1,6 @@
 
+# Model 17
+
 f = function(t, a, t1, t2){
   # We subtract t1 inside the sine function
   ifelse(t >= t1 & t <= t2, 0.4 * cos(2 * pi * (t - t1)), a)
