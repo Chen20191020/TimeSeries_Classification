@@ -138,9 +138,10 @@ To run the proposed method, first execute:
   The data can be downloaded from:  
   https://drive.google.com/drive/folders/1ditsD4G6S8q77yTPiAdolQcC5U8FyHHo?usp=sharing
   Please manually specify the data paths.
+<!--**
 - **Table S.9**:  
   First run `model_ur_lm_setup.R`.
-
+-->
 ## Real Data Results
 
 - **Table 2 and Figure 4**:  
