@@ -25,7 +25,7 @@ Details for each folder are provided below.
 
 **Folder Table 2** contains the code for classification accuracy for EEG data across all methods. It includes `DWT_realdata.R`, `FLogistic_realdata.R`, `LSWmethod_realdata.R`, `Proposed_realdata.R`, and `methods_inpy_realdata.py`. In addition, the code file `methods_inpy_realdata.py` contains the code for methods Arsenal, MultiRocket, Rocket, STSForest, Shapelet, TimeCNN, and TimeRNN. 
 
-**Folder Figure 4** contains the code for Figure 4(a) and Figure 4(b). It includes 2 subfolders, `Figure 4(a)` and `Figure 4(b)`. `Figure 4(a)` contains code file `Figure_4(a).R` and `Figure 4(b)` contains `Figure_4(b)_draw.R` to draw the plot and the rest code files are same as in **Folder Table 2**. However, we use the output majority voting results.
+**Folder Figure 4** contains the code for Figure 4(a) and Figure 4(b). It includes 2 subfolders, `Figure 4(a)` and `Figure 4(b)`. `Figure 4(a)` contains code file `Figure_4(a).R`.Moreover, `Figure 4(b)` contains `Figure_4(b)_draw.R` to draw the plot and the rest code files are same as in **Folder Table 2**. However, we use the output majority voting results.
 
 **Folder Table S.1** contains the code for classification accuracy under noise distribution (ii). It includes `Simulation_setup_eps2.R` and subfolders, `Balanced` and `Unbalanced`. 
 
