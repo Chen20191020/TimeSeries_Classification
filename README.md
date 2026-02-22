@@ -35,7 +35,7 @@ Details for each folder are provided below.
 
 **Folder Table S.4** contains the code for classification accuracy when differences lie in the mean. It includes `Simulation_setup_meandiff.R` and subfolders, `Balanced` and `Unbalanced`. 
 
-**Folder Table S.5** contains the code for computing classification accuracy under the change-point setup, both without modification and after modification. It includes `Setup_1.R`, `Setup_2.R` for the results without modification, and `Change_detect_Setup_1.R` and `Change_detect_Setup_2.R` for the results after modification.
+**Folder Table S.5** contains the code for computing classification accuracy under the change-point setup, both without modification and with modification. It includes `Setup_1.R`, `Setup_2.R` for the results without modification, and `Change_detect_Setup_1.R` and `Change_detect_Setup_2.R` for the results after modification.
 
 **Folder Table S.6** contains the code for classification accuracy under selected models with various features. It includes `selected_model_setup.R` for simulation setup and `All_aggfeature.R`, `Half_aggfeature.R`, `L2Dis_aggfeature.R`, `Min_aggfeature.R`, `Minvary_aggfeature.R`, `Proposed_aggfeature.R` for aggregate feature all, first-half, L2, min, min-vary, and proposed respectively.
 
