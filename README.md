@@ -15,6 +15,7 @@ Our proposed method, along with DWT, LSW, and FLogistic, is implemented in R. Th
 
 **Folder Table 1**, **Folder Table S.1**, **Folder Table S.2**, **Folder Table S.3**, **Folder Table S.4**, include two subfolders, `Balanced` and `Unbalanced`. The `Balanced` folder contains code for all methods under the setting $N_1 = 100, N_2 = 100$, while the `Unbalanced` folder contains code for all methods under the setting $N_1 = 50, N_2 = 100$.
 
+Details for each folder are provided below.
 
 **Folder Table 1** contains the code for classification accuracy under noise distribution (i). It includes `Simulation_setup_eps1.R` and subfolders, `Balanced` and `Unbalanced`. 
 
