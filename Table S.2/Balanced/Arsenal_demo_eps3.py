@@ -236,6 +236,35 @@ def generate_nAR2_class2(n, v):
         else:
             ts[i] = 0.3 * (np.sin(2*np.pi*(t/n))+1) * ts[i-2] + 0.2 * np.exp(-(t/n)*(ts[i-1]**2)) + sigma * w[i+2]
     return ts
+     
+# -------------------------
+# Case 7
+# -------------------------
+def generate_eps_class1(n: int, v: float) -> np.ndarray:
+    ts = np.zeros(n)
+    for i in range(1, n + 1):
+        err = (v / 2) * (1 + i / n) * np.random.normal(0, 1)
+        ts[i - 1] = err
+    return ts
+
+
+def generate_ARbump_class2(n: int, v: float, h: float = 0.02) -> np.ndarray:
+    ts = np.zeros(n)
+    x_ini = (v / 2) * (1 + 1 / n) * np.random.normal(0, 1)
+
+    for i in range(1, n + 1):
+        err = (v / 2) * (1 + i / n) * np.random.normal(0, 1)
+        a_i = 0.3 * np.exp(-((i / n - 1 / 2) ** 2) / (2 * h ** 2))
+
+        if i == 1:
+            ts[i - 1] = a_i * x_ini + err
+        else:
+            ts[i - 1] = a_i * ts[i - 2] + err
+
+    return ts
+
+
+
 
 # 2. Define the list of cases
 # Format: (Case Name, Class 1 Generator, Class 2 Generator)
@@ -246,6 +275,7 @@ cases = [
     ("Case 4 (nAR1.2)",    generate_nAR1_2_class1,  generate_nAR1_2_class2),
     ("Case 5 (AR2.2)",     generate_AR2_2_class1,   generate_AR2_2_class2),
     ("Case 6 (nAR2)",      generate_nAR2_class1,    generate_nAR2_class2),
+     ("Case 7 (epsBump)",  generate_eps_class1,     generate_ARbump_class2)
 ]
 
 # Parameters
