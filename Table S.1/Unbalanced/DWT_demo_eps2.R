@@ -23,7 +23,7 @@ Y = factor(c(rep(1, n_train_1), rep(2, n_train_2)))
 Y_test = factor(c(rep(1, n_test_1), rep(2, n_test_2)))
 
 
-for(c_setting in 1:6){
+for(c_setting in 1:7){
   res_dwt = c()
   print(paste("Model", c_setting))
   for(num_res in 1:500){
