@@ -179,6 +179,31 @@ def generate_nAR2_class2(n, v):
             ts[i] = 0.3*(np.sin(2*np.pi*t)+1)*ts[i-2] + 0.2*np.exp(-t*ts[i-1]**2) + w[i+2]
     return ts
 
+# -------------------------
+# Case 7
+# -------------------------
+
+def generate_eps_class1(n, v):
+    ts = np.empty(n)
+    for i in range(n):
+        ts[i] = np.random.normal(0, np.sqrt(1 / v))
+    return ts
+
+
+def generate_ARbump_class2(n, v, h=0.02):
+    ts = np.empty(n)
+    x_ini = np.random.normal(0, np.sqrt(1 / v))
+    
+    for i in range(n):
+        a_i = 0.3 * np.exp(-((((i + 1) / n) - 1/2) ** 2) / (2 * h ** 2))
+        
+        if i == 0:
+            ts[i] = a_i * x_ini + np.random.normal(0, np.sqrt(1 / v))
+        else:
+            ts[i] = a_i * ts[i - 1] + np.random.normal(0, np.sqrt(1 / v))
+    
+    return ts
+
 
 
 # 2. Define the list of cases
@@ -190,6 +215,7 @@ cases = [
     ("Case 4 (nAR1.2)",    generate_nAR1_2_class1,  generate_nAR1_2_class2),
     ("Case 5 (AR2.2)",     generate_AR2_2_class1,   generate_AR2_2_class2),
     ("Case 6 (nAR2)",      generate_nAR2_class1,    generate_nAR2_class2),
+     ("Case 7 (epsBump)",  generate_eps_class1,     generate_ARbump_class2)
 ]
 
 
