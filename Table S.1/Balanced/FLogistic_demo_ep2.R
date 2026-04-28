@@ -16,7 +16,7 @@ case_res = list()
 basis_num = 5
 
 
-for(case_num in 1:6){
+for(case_num in 1:7){
   sum_res = c()
   print(paste("Model", case_num))
   for(simu_num in 1:500){ # 500 repeated
