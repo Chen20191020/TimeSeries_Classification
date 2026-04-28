@@ -184,6 +184,10 @@ def generate_nAR2_class2(n, v):
             ts[i] = 0.3*(np.sin(2*np.pi*t)+1)*ts[i-2] + 0.2*np.exp(-t*ts[i-1]**2) + w[i+2]
     return ts
 
+# -------------------------
+# Case 7
+# -------------------------
+
 def generate_eps_class1(n, v):
     ts = np.empty(n)
     for i in range(n):
