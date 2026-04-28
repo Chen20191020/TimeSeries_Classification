@@ -217,7 +217,7 @@ function_names <- c(
   "generate_nAR1_class1", "generate_MA2_class2",
   "generate_nAR1.2_class1", "generate_nAR1.2_class2",
   "generate_AR2.2_class1", "generate_AR2.2_class2",
-  "generate_nAR2_class1", "generate_nAR2_class2"
+  "generate_nAR2_class1", "generate_nAR2_class2",
   "generate_eps_class1", "generate_ARbump_class2"
 )
 
