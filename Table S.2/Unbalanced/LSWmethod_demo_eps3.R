@@ -10,7 +10,7 @@ J = log(n, 2) - 1
 f_propotion = 0.04
 
 
-for(case in 1:6){
+for(case in 1:7){
   acuracy = c()
   print(paste("Model", case))
   for(repea in 1:500){
