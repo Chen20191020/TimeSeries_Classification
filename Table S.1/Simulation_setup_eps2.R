@@ -180,6 +180,34 @@ generate_nAR2_class2 = function(n, v){
   return(ts)
 }
 
+# case 7
+generate_eps_class1 = function(n, v){
+  ts = c()
+  for(i in 1:n){
+    err = (v/4 + v/4*(cos(2*pi*(i/n))^2)) * rnorm(1, 0, 1)
+    ts[i] = err
+  }
+  return(ts)
+}
+
+generate_ARbump_class2 = function(n, v, h = 0.02){
+  ts = c()
+  x_ini = rnorm(1, 0, 1)
+  
+  for(i in 1:n){
+    err = (v/4 + v/4*(cos(2*pi*(i/n))^2)) * rnorm(1, 0, 1)
+    a_i = 0.3 * exp(-((i/n - 1/2)^2) / (2 * h^2))
+    
+    if(i == 1){
+      ts[i] = a_i * x_ini + err
+    } else{
+      ts[i] = a_i * ts[i-1] + err
+    }
+  }
+  
+  return(ts)
+}
+
 
 function_names <- c(
   "generate_AR1_class1", "generate_AR1_class2",
@@ -187,6 +215,7 @@ function_names <- c(
   "generate_nAR1_class1", "generate_MA2_class2",
   "generate_nAR1.2_class1", "generate_nAR1.2_class2",
   "generate_AR2.2_class1", "generate_AR2.2_class2",
-  "generate_nAR2_class1", "generate_nAR2_class2"
+  "generate_nAR2_class1", "generate_nAR2_class2",
+  "generate_eps_class1", "generate_ARbump_class2"
 )
 
