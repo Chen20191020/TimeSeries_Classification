@@ -515,6 +515,101 @@ sim_func_auto_faster = function(n, c_setting, c_1, b_1, c_2, b_2, train_class1, 
 }
 
 
+# L2 statistic
+sim_func_auto_faster_L2Dis = function(Train_list, Testing_list, c = 25, b = 1, m = 500) {
+  test_class1 = length(Testing_list) / 2
+  test_class2 = length(Testing_list) / 2
+  train_class1 = length(Train_list) / 2
+  train_class2 = length(Train_list) / 2
+  
+  total_num_test = test_class1 + test_class2
+  total_num_train = train_class1 + train_class2
+  
+  coeffi_list = list()
+  
+  for (num_obs in 1:total_num_train) {
+    res = fix.fit.legen_fast(Train_list[[num_obs]], c, b, m, inte = FALSE)
+    coeffi_list[[num_obs]] = res$ts.coef
+  }
+  
+  coeffi_list_class1 = coeffi_list[1:train_class1]
+  coeffi_list_class2 = coeffi_list[(1 + train_class1):total_num_train]
+  
+  num_lags = b
+  
+  coeff_avg_class1 = lapply(1:num_lags, function(k) {
+    lag_k_list = lapply(coeffi_list_class1, function(obs) obs[[k]])
+    Reduce("+", lag_k_list) / train_class1
+  })
+  
+  coeff_avg_class2 = lapply(1:num_lags, function(k) {
+    lag_k_list = lapply(coeffi_list_class2, function(obs) obs[[k]])
+    Reduce("+", lag_k_list) / train_class2
+  })
+  
+  coeffi_list_test = list()
+  for (num_obs in 1:total_num_test) {
+    res = fix.fit.legen_fast(Testing_list[[num_obs]], c, b, m, inte = FALSE)
+    coeffi_list_test[[num_obs]] = res$ts.coef
+  }
+  
+  Y = c(rep(1, test_class1), rep(2, test_class2))
+  y_pre = rep(0, total_num_test)
+  
+  for (num_obs in 1:total_num_test) {
+    L2_i_class1 = sum(sapply(1:num_lags, function(k) {
+      sum((coeffi_list_test[[num_obs]][[k]] - coeff_avg_class1[[k]])^2/m)
+    }))
+    
+    L2_i_class2 = sum(sapply(1:num_lags, function(k) {
+      sum((coeffi_list_test[[num_obs]][[k]] - coeff_avg_class2[[k]])^2/m)
+    }))
+    
+    y_pre[num_obs] = ifelse(L2_i_class1 < L2_i_class2, 1, 2)
+  }
+  
+  result = sum(y_pre == Y)
+  return(list(coeff_avg_class1, coeff_avg_class2, result / total_num_test))
+}
+
+# Compute concentration index
+concentration_index = function(Train_list, train_class1, c = 25, b = 1, m = 500, inte = FALSE) {
+  
+  train_class2 = length(Train_list)  - train_class1
+  total_num_train = train_class1 + train_class2
+  
+  coeffi_list = list()
+  
+  for (num_obs in 1:total_num_train) {
+    res = fix.fit.legen_fast(Train_list[[num_obs]], c, b, m, inte = inte)
+    coeffi_list[[num_obs]] = res$ts.coef
+  }
+  
+  coeffi_list_class1 = coeffi_list[1:train_class1]
+  coeffi_list_class2 = coeffi_list[(1 + train_class1):total_num_train]
+  
+  num_lags = b
+  
+  coeff_avg_class1 = lapply(1:num_lags, function(k) {
+    lag_k_list = lapply(coeffi_list_class1, function(obs) obs[[k]])
+    Reduce("+", lag_k_list) / train_class1
+  })
+  
+  coeff_avg_class2 = lapply(1:num_lags, function(k) {
+    lag_k_list = lapply(coeffi_list_class2, function(obs) obs[[k]])
+    Reduce("+", lag_k_list) / train_class2
+  })
+  
+  z = Map("-", coeff_avg_class1, coeff_avg_class2)
+  
+  S_conindex <- sapply(z, function(x) {
+    max(abs(x)) / sum(x^2)
+  })
+  
+  return(list(coeffi_list_class1, coeffi_list_class2, coeff_avg_class1, coeff_avg_class2, min(S_conindex)))
+}
+
+
 
 
 
