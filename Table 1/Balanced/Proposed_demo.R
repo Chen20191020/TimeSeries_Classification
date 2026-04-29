@@ -111,7 +111,7 @@ model_index = 1:6
 for(m_index in model_index){
   res = c()
   print(paste("Model", m_index))
-  for(ex_t in 1:5){
+  for(ex_t in 1:500){
     Train_list = list()
     for (i in 1:(2 * train_class_size)) {
       if (i <= train_class_size) {
